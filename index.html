@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        function myFunction() {
+          document.getElementById("myNumber").stepUp();
+        }
+        function myFunction2() {
+          document.getElementById("myNumber").stepDown();
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./icons/Logo.svg" alt="" >
+        <nav class="nav-primary">
+            <ul>
+                <li><a class="h3" href="#">women's</a></li>
+                <li><a class="h3" href="#">men's</a></li>
+                <li><a class="h3" href="#">brands</a></li>
+                <li><a class="h3" href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <img class="nav-cart" src="./icons/shoppingCart.svg" alt="">
+            <img class="nav-profile-img" src="./icons/profilePhoto.svg">
+        </div>
+    </header>
+    <main>
+        <div class="product">
+            <div class="product-img">
+                <div class="product-main-img">
+                    <img class="main-frame" src="./images/Pink Frame.svg" alt="">
+                    <img class="main-img" src="./images/Photo.svg" alt="">
+                </div>
+                <div class="product-thumb-img">
+                    <img class="img1" src="./images/thumbnail1.svg" alt="">
+                    <img class="img2" src="./images/thumbnail2.svg" alt="">
+                    <img class="img3" src="./images/thumbnail3.svg" alt="">
+                </div>
+            </div>
+            <div class="product-body">
+                <div class="product-header">
+                    <h2 class="gray-text">NARCISO</h2>
+                    <h1>Ruby Orchid Fragrance</h1>
+                    <h3>Eau de Parfum for her</h3>
+                </div>
+                <div class="product-main">
+                    <p class="gray-text light">Experience the iconic original female fragrance by Narciso. Addictive floral notes with the warm woody undertones inspires a whirlwind of sweet sensations, transporting you to a world of floral fantasy.</p>
+                    <div class="price">
+                        <h2 class="h1 light">124.00€</h2>
+                        <h3 class="line-through h2 gray-text">184.00€</h3>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-secondary h3"><span class="bold">30ml</span><span class="light gray-text">50.00€</span></button>
+                        <button class="btn btn-secondary h3"><span class="bold">50ml</span><span class="light gray-text">100.00€</span></button>
+                        <button class="btn btn-secondary h3"><span class="bold">80ml</span><span class="light gray-text">124.00€</span></button>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <div class="counter">
+                        <button class="counter-btn" onclick="myFunction2()">-</button>
+                        <input type="number" id="myNumber" placeholder="1">
+                        <button class="counter-btn" onclick="myFunction()">+</button>
+                    </div>
+                    <div>
+                        <button class="btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
