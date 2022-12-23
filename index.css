@@ -171,6 +171,7 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  gap: 1rem;
 }
 .product-main {
   padding-top: 1rem;
@@ -210,6 +211,13 @@ nav ul {
   grid-template-columns: 1fr;
 }
 
+.btn-primary {
+  background-color: black;
+  color: white;
+  padding: 9px 42px;
+  font-size: 24px;
+}
+
 .btn {
   background: #FBEBEB;
   border: 1px solid #000000;
@@ -236,17 +244,21 @@ input::-webkit-inner-spin-button {
   border: none;
   font-size: 42px;
 }
+.counter .counter-btn:hover {
+  background-color: #FBEBEB;
+}
+.counter .counter-btn:focus {
+  background-color: transparent;
+  border: 1px solid black;
+}
+.counter .counter-btn:active {
+  background-color: #FBEBEB;
+  border: 1px solid black;
+}
 .counter #myNumber {
   width: 50px;
   font-size: 24px;
   color: grey;
-}
-
-.btn-primary {
-  background-color: black;
-  color: white;
-  padding: 9px 42px;
-  font-size: 24px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -164,6 +164,7 @@
       display: grid;
       grid-template-columns: 1fr;
       align-content: center;
+      gap: 1rem;
   }
   &-main {
       padding-top: 1rem;
@@ -197,6 +198,12 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .btn-primary {
+    background-color: black;
+    color: white;
+    padding: 9px 42px;
+    font-size: 24px;
+  }
   .btn {
     background: $clr-primary;
     border: 1px solid #000000;
@@ -219,18 +226,23 @@ input::-webkit-inner-spin-button {
   padding: 5px 10px;
   border: none;
   font-size: 42px;
+  &:hover {
+    background-color: $clr-primary;
+  }
+  &:focus {
+    background-color: transparent;
+    border: 1px solid $clr-black;
+  }
+  &:active {
+    background-color: $clr-primary;
+    border: 1px solid $clr-black;
+  }
 }
-#myNumber {
+#counter {
   width: 50px;
   font-size: 24px;
   color: grey;
 }
-}
-.btn-primary {
-  background-color: black;
-  color: white;
-  padding: 9px 42px;
-  font-size: 24px;
 }
 .price {
   @media only screen and (max-width: 600px){

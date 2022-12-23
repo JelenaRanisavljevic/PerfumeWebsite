@@ -7,12 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <script>
-        function myFunction() {
-          document.getElementById("myNumber").stepUp();
+        function onCounterChange(operator) {
+         if (operator==='+'){
+          document.getElementById("counter").stepUp();
         }
-        function myFunction2() {
-          document.getElementById("myNumber").stepDown();
-        }
+        else if (operator==='-'){
+            if (Number(document.getElementById("counter").value)<0) {
+                document.getElementById("counter").value=1
+            }
+          document.getElementById("counter").stepDown();
+        }}
         </script>
 </head>
 <body>
@@ -64,9 +68,9 @@
                 </div>
                 <div class="product-footer">
                     <div class="counter">
-                        <button class="counter-btn" onclick="myFunction2()">-</button>
-                        <input type="number" id="myNumber" placeholder="1">
-                        <button class="counter-btn" onclick="myFunction()">+</button>
+                        <button class="counter-btn" onclick="onCounterChange('-')">-</button>
+                        <input type="number" id="counter" placeholder="1" value="1" min="0" max="9">
+                        <button class="counter-btn" onclick="onCounterChange('+')">+</button>
                     </div>
                     <div>
                         <button class="btn-primary">Add to cart</button>
